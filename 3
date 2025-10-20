@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int numbers = 1;
+	unsigned int total = 0;
+
+
+	while (numbers <= 10)
+	{
+		unsigned grades = 0;
+		cout << "input the grade" << endl;
+		cin >> grades;
+		if (grades > 100)
+			cout << "您输入的成绩有误\n";
+		else
+		{
+			total = total + grades;
+			numbers++;
+		}
+	}
+	cout << "总分是" << total << "分" << endl;
+	double average;
+	average = static_cast<double>(total) / 10;
+	cout << "平均分是" << average << "分";
+
+
+
+
+
+}
